@@ -1,2 +1,7 @@
-# agile
-CS555 Agile Project
+# Agile Project
+
+Team members:
+- Philipp Hunold
+- Ezhilarasi Swaminathan
+- Anas Alamoudi
+
