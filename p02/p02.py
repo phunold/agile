@@ -17,27 +17,34 @@ if not os.path.isfile(ged):
   print("FILE NOT FOUND: %s" % ged)
   sys.exit(2)
 
+data = []
+
 with open(ged) as f:
   for line in f:
-    print(line, end='')
-
+    #print(line, end='')
+    temp = {}
     # reset loop
     gid = level = tag = arg = None
 
     # match ID records
     if line.startswith('0 @'):
-      level, gid, tag = re.match('([012])\s+([\@\w]+)\s+(.*?)$', line).groups()
+      temp['level'], temp['gid'], temp['tag'] = re.match('([012])\s+([\@\w]+)\s+(.*?)$', line).groups()
     else:
-      level, tag, arg = re.match('([012])\s+(\w+)\s+(.*?)$', line).groups()
-     
-    print("LEVEL: %s" % level)
+      temp['level'], temp['gid'], temp['tag'] = re.match('([012])\s+(\w+)\s+(.*?)$', line).groups()
+    #print("LEVEL: %s" % temp['level'])
+    
+    data.append(temp)
 
-    # check for valid tag
-    if tag not in VALID_TAGS:
-      print("INVALID TAG")
-    else:
-      print("TAG: %s" % tag)
+    # check for valid tag but it needs more work
+    #if temp['tag'] not in VALID_TAGS:
+      #continue
+    #else:
+      #data.append(temp)
 
+print('-' * 32) 
+for i in data:
+  if i['tag'] == 'INDI':
+    print(i['gid'])
+  elif i['gid'] == 'NAME':
+    print(i['tag'])
     print('-' * 32)
-
-
