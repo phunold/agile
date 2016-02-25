@@ -9,3 +9,5 @@ Team members:
 ### User Stories complete
 - US02: Birth before marriage
 - US03: Birth before death
+- US07: Less than 150 years old
+- US21: Correct role for gender
