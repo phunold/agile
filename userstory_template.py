@@ -1,17 +1,28 @@
 #!/usr/bin/env python
 
-import sys
-import utils
+"""
+USXX <TITLE>
 
-if len(sys.argv) != 2:
-  print("USAGE: %s <GEDCOM FILE>" % sys.argv[0])
-  sys.exit()
+Author: <your name>
 
-ged = sys.argv[1]
+Name this file: usXX.py and it to list in lib/__init__.py
+Add usXX.check(individuals) in main.py
 
-families, individuals = utils.load_from_file(ged)
+"""
 
-for index,i in enumerate(individuals):
-  print(index)
-  print("level:%s  tag:%s arg:%s" % (i['level'],i['tag'],i['arg']))
+def check(individuals):
+#or def check(families):
+#or def check(individuals,families):
+
+  for index,i in enumerate(individuals):
+    tag = i['tag'] 
+    arg = i['arg'] 
+
+    if tag == 'XXXX':
+      pass
+ 
+  for item in list:
+    if ERROR:
+      print('USXX ERROR <TITLE>')
+      print(">>",item)
 
