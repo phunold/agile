@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import sys
 from lib import *
@@ -14,4 +14,6 @@ families, individuals = utils.load_from_file(ged)
 # Run Checks
 us02.check(individuals)
 us03.check(individuals)
+us13.check(families, individuals)
+us22.check(families, individuals)
 

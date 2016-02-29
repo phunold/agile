@@ -11,3 +11,5 @@ Team members:
 - US03: Birth before death
 - US07: Less than 150 years old
 - US21: Correct role for gender
+- US22: Unique IDs
+- US13: Siblings spacing

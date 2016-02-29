@@ -46,8 +46,8 @@ def load_from_file(ged):
         person['tag'] = tag
         person['arg'] = arg
         individuals.append(person)
-
-      elif prev_tag == 'FAMC':
+      # I fixed this line from FAMC to FAM since it is the right one, let us talk about it!
+      elif prev_tag == 'FAM':
         family['level'] = level
         family['tag'] = tag
         family['arg'] = arg
