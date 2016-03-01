@@ -45,8 +45,9 @@ def check(families, individuals):
   for item in children.items():
   	if len(item[1]) > 1:
   		if dates[item[1][1]]['BIRT'] - dates[item[1][0]]['BIRT'] < timedelta(weeks=32):
-  			print ("US13 ERROR Siblings spacing")
-  			print (">>", item[0])
+  			if dates[item[1][1]]['BIRT'] - dates[item[1][0]]['BIRT'] > timedelta(days=2):
+  				print ("US13 ERROR Siblings spacing")
+  				print (">>", item[0])
   		
 
 
