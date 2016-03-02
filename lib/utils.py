@@ -11,6 +11,8 @@ families = []
 
 def load_from_file(ged):
 
+  print("LOAD", ged)
+
   if not ged.endswith('ged'):
     print ("Expecting .ged File: %s" % ged)
     sys.exit()
