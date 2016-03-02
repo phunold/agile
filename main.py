@@ -8,7 +8,7 @@ if len(sys.argv) != 2:
   sys.exit()
 
 ged = sys.argv[1]
-
+print(ged)
 families, individuals = utils.load_from_file(ged)
 
 # Run Checks
@@ -16,4 +16,5 @@ us02.check(individuals)
 us03.check(individuals)
 us13.check(families, individuals)
 us22.check(families, individuals)
-
+us07.check(individuals)
+us21.check(families, individuals)
