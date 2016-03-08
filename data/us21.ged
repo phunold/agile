@@ -1,7 +1,7 @@
 0 NOTE https://github.com/phunold/agile 
 0 @I01@ INDI
 1 NAME Philipp Hunold
-1 SEX M
+1 SEX F
 1 BIRT
 2 DATE 9 APR 1979
 1 FAMS @F01@
@@ -11,15 +11,6 @@
 1 BIRT
 2 DATE 10 AUG 1979
 1 FAMS @F01@
-0 @I03@ INDI
-1 NAME Lukas Hunold
-1 SEX M
-1 BIRT
-2 DATE 02 JUL 1990
-1 FAMC @F01@
 0 @F01@ FAM
 1 HUSB @I01@
 1 WIFE @I02@
-1 MARR
-2 DATE 31 10 2009
-1 CHIL @I03@

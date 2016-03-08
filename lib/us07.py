@@ -31,10 +31,10 @@ def check(individuals):
     
   for id,date in dates.items():
     if 'BIRT' in date and 'DEAT' in date:
-      if relativedelta(date['DEAT'], date['BIRT']).years > 150:
+      if relativedelta(date['DEAT'], date['BIRT']).years >= 150:
         print('US07 Lived longer than 150 years')
         print(">>",id,date)
     if 'BIRT' in date and not 'DEAT' in date:
-      if relativedelta(today, date['BIRT']).years > 150:
+      if relativedelta(today, date['BIRT']).years >= 150:
         print('US07 Should be less than 150 years')
         print(">>",id,date)
