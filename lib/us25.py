@@ -27,15 +27,14 @@ def check(families, individuals):
     	indi_id = arg
     	indi[indi_id] = []
     elif tag == 'BIRT':
-		indi[indi_id].append(individuals[index + 1]['arg'])
-    elif tag == 'NAME':
-		indi[indi_id].append(arg)
+      indi[indi_id].append(individuals[index + 1]['arg'])
+    elif tag == 'NAME': indi[indi_id].append(arg)
   # call us22 to check for unique ids
   for i in childs_ids:
-  	print indi[i]
-  	if len(set(indi[i][:][0])) is not len(indi[i][:][0]):
-  		print("US25 ERROR Unique first names in families")
-  		break
-  	if len(set(indi[i][:][1])) is not len(indi[i][:][1]):
-  		print("US25 ERROR Unique first names in families")
-  		break
+    print (indi[i])
+    if len(set(indi[i][:][0])) is not len(indi[i][:][0]):
+      print("US25 ERROR Unique first names in families")
+      break
+    if len(set(indi[i][:][1])) is not len(indi[i][:][1]):
+      print("US25 ERROR Unique first names in families")
+      break
