@@ -15,5 +15,3 @@ Team members:
 - US13: Siblings spacing
 - US01: Permit only dates before current date
 - US27: Include individual ages in the report
-- US25: Unique first names in families
-- US28: Order siblings by age

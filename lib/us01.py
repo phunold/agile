@@ -1,5 +1,5 @@
 """
-US01: Don't permit Dates before current date    
+US01: Permit only dates before current date    
 Author: Ezhilarasi Swaminathan
 
 """
