@@ -17,9 +17,12 @@ def display(families, individuals):
     arg = i['arg'] 
     # memorize ID
     if tag == 'INDI':
-    	indi_id = arg
-    if tag == 'BIRT':
-    	indi[indi_id] = datetime.strptime(individuals[index + 1]['arg'], "%d %b %Y")
+      indi_id = arg
+      indi[indi_id] = list()
+    elif tag == 'BIRT':
+    	indi[indi_id].append(datetime.strptime(individuals[index + 1]['arg'], "%d %b %Y"))
+    elif tag == 'NAME':
+      indi[indi_id].append(arg)
   
   for index, i in enumerate(families):
   	tag = i['tag']
@@ -30,9 +33,14 @@ def display(families, individuals):
   		child_ids[fam_id] = list()
   	elif tag == 'CHIL':
   		child_ids[fam_id].append([arg,indi[arg]])
-
+  print ('*'*50)
+  print ('\tIndividuals Age Report')
+  print ('*'*50    )
+  print ('NAME\t\t\tAGE(years)\n'  )
+  WIDTH = 30
   for key in child_ids.keys():
-  	resutls = sorted(child_ids[key][:], key= lambda x: x[1])
-  	print (key)
-  	for i in resutls:
-  		print (i[0], i[1].year)
+    resutls = sorted(child_ids[key][:], key= lambda x: x[1][1])
+    print (key)
+    for i in resutls:
+      print ("{} {}".format(i[1][0].ljust(WIDTH),i[1][1].year))  
+  print ('*'*50) 

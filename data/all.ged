@@ -139,7 +139,6 @@
 1 NAME Elle Hunold
 1 SEX F
 1 BIRT
-<<<<<<< HEAD
 2 DATE 11 JUL 2012
 0 @I20@ INDI
 1 NAME Zaki Hunold
@@ -150,10 +149,7 @@
 1 NAME Enron Hunold
 1 SEX F
 1 BIRT
-2 DATE 11 JUL 2014
-=======
 2 DATE 11 JUL 2016
->>>>>>> 36e56a76e02d42ca6b76dd0e58f8fcee799c2cbe
 0 @F01@ FAM
 1 HUSB @I01@
 1 WIFE @I02@
