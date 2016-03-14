@@ -13,3 +13,5 @@ Team members:
 - US21: Correct role for gender
 - US22: Unique IDs
 - US13: Siblings spacing
+- US01: Permit only dates before current date
+- US27: Include individual ages in the report
