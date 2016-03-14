@@ -3,7 +3,7 @@
 Team members:
 - Philipp Hunold
 - Ezhilarasi Swaminathan
-- Anas Alamoudi
+- Anas Al-amoudi
 
 ## Scrum 1
 ### User Stories complete
