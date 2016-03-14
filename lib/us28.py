@@ -8,7 +8,6 @@ List siblings in families by age
 """
 
 from datetime import datetime
-import operator
 
 def display(families, individuals):
   indi = dict()

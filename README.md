@@ -13,3 +13,5 @@ Team members:
 - US21: Correct role for gender
 - US22: Unique IDs
 - US13: Siblings spacing
+- US25: Unique first names in families
+- US28: Order siblings by age
