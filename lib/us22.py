@@ -1,7 +1,5 @@
-from datetime import datetime
-from datetime import timedelta
 """
-US13 Unique IDs
+US22 Unique IDs
 
 Author: Anas Alamoudi
 
@@ -9,10 +7,10 @@ All individual IDs should be unique and all family IDs should be unique
 
 """
 
+from datetime import datetime
+from datetime import timedelta
 
 def check(families, individuals):
-  #or def check(families):
-  #or def check(individuals,families):
   
   indi_ids = []
   fam_ids = []

@@ -19,6 +19,8 @@ us22.check(families, individuals)
 us07.check(individuals)
 us21.check(families, individuals)
 us01.check(families, individuals)
+us25.check(families, individuals)
 
 #Display Reports
 us27.display(individuals)
+

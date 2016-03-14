@@ -44,15 +44,15 @@ def check(families, individuals):
   #See if there are dates post the current date/including current date  
   for id,dateItem in personDates.items():
      if dateItem['DATE'] >= today:
-        print 'US01 Only dates before current date allowed'
-        print 'Birth/Death recorded in the Gedcom file should be prior to today'
-        print '>>Error for',id,'with birth/death date',dateItem['DATE']
+        print ('US01 Only dates before current date allowed')
+        print ('Birth/Death recorded in the Gedcom file should be prior to today')
+        print ('>>Error for',id,'with birth/death date',dateItem['DATE'])
 
   for id,dateItem in familyDates.items():
      if dateItem['DATE'] >= today:
-        print 'US01 Only dates before current date allowed'
-        print 'Marriage/Divorce recorded in the Gedcom file should be prior to today'
-        print '>>Error for',id,'with marriage/divorce date',dateItem['DATE']
+        print ('US01 Only dates before current date allowed')
+        print ('Marriage/Divorce recorded in the Gedcom file should be prior to today')
+        print ('>>Error for',id,'with marriage/divorce date',dateItem['DATE'])
     
 
         

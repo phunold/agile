@@ -41,13 +41,13 @@ def display(individuals):
     elif 'BIRT' in date and not 'DEAT' in date:
         ages[id] = relativedelta(today, date['BIRT']).years
   
-  print '*'*50
-  print '\tIndividuals Age Report'
-  print '*'*50    
-  print 'NAME\t\t\tAGE(years)\n'  
+  print ('*'*50)
+  print ('\tIndividuals Age Report')
+  print ('*'*50    )
+  print ('NAME\t\t\tAGE(years)\n'  )
   width = 30
   for id,age in ages.items():
       for id1,name in names.items():
         if id == id1:
-            print "{} {}".format(name.ljust(width),age)  
-  print '*'*50    
+            print ("{} {}".format(name.ljust(width),age))  
+  print ('*'*50)    
