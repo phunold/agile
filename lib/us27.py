@@ -37,7 +37,8 @@ def display(individuals):
      
   for id,date in dates.items():
     if 'BIRT' in date and 'DEAT' in date:
-        ages[id] = abs(( date['DEAT'] - date['BIRT']).years)
+        date_diff  = abs (date['DEAT'] - date['BIRT']).days
+        ages[id] = date_diff/365
     elif 'BIRT' in date and not 'DEAT' in date:
         ages[id] = relativedelta(today, date['BIRT']).years
   
