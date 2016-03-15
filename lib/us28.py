@@ -34,9 +34,9 @@ def display(families, individuals):
   	elif tag == 'CHIL':
   		child_ids[fam_id].append([arg,indi[arg]])
   print ('*'*50)
-  print ('\tIndividuals Age Report')
+  print ('\tSiblings order by age for each family')
   print ('*'*50    )
-  print ('NAME\t\t\tAGE(years)\n'  )
+  print ('NAME\t\t\tBirth Year\n'  )
   WIDTH = 30
   for key in child_ids.keys():
     resutls = sorted(child_ids[key][:], key= lambda x: x[1][1])

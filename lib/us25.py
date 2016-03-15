@@ -34,7 +34,9 @@ def check(families, individuals):
     print (indi[i])
     if len(set(indi[i][:][0])) is not len(indi[i][:][0]):
       print("US25 ERROR Unique first names in families")
+      print(">>",indi[i])
       break
     if len(set(indi[i][:][1])) is not len(indi[i][:][1]):
       print("US25 ERROR Unique first names in families")
+      print(">>",indi[i])
       break
