@@ -1,0 +1,76 @@
+LOAD ./data/all.ged
+US02 ERROR Birth before Marriage
+>> @I07@ {'MARR': datetime.datetime(1979, 4, 8, 0, 0), 'BIRT': datetime.datetime(1979, 4, 9, 0, 0)}
+US02 ERROR Birth before Marriage
+>> @I01@ {'MARR': datetime.datetime(1979, 4, 8, 0, 0), 'BIRT': datetime.datetime(1979, 4, 9, 0, 0)}
+US02 ERROR Birth before Marriage
+>> @I15@ {'MARR': datetime.datetime(1979, 4, 8, 0, 0), 'BIRT': datetime.datetime(1979, 4, 9, 0, 0)}
+US03 ERROR Birth before DEAT
+>> @I03@ {'BIRT': datetime.datetime(1979, 4, 9, 0, 0), 'DEAT': datetime.datetime(1979, 4, 8, 0, 0)}
+US13 ERROR Siblings spacing
+>> @F01@
+US22 ERROR Unique IDs
+>> ['@F01@', '@F02@', '@F01@']
+US07 Should be less than 150 years
+>> @I06@ {'BIRT': datetime.datetime(1090, 7, 2, 0, 0)}
+US07 Lived longer than 150 years
+>> @I05@ {'BIRT': datetime.datetime(1700, 4, 9, 0, 0), 'DEAT': datetime.datetime(1850, 4, 10, 0, 0)}
+US21 ERROR Correct gender for role required.
+>> @I02@ Wife can only be female.
+US21 ERROR Correct gender for role required.
+>> @I02@ Wife can only be female.
+US21 ERROR Correct gender for role required.
+>> @I24@ Wife can only be female.
+US01 Only dates before current date allowed
+Birth/Death recorded in the Gedcom file should be prior to today
+>>Error for @I22@ with birth/death date 2017-07-02
+['Philipp Hunold', '9 Apr 1979']
+US25 ERROR Unique first names in families
+>> ['Philipp Hunold', '9 Apr 1979']
+US18 Siblings should not marry
+@I26@ >> {'FAMS': '@F02@', 'FAMC': '@F01@'}
+**************************************************
+	Individuals Age Report
+**************************************************
+NAME			AGE(years)
+
+Philipp Hunold                 36
+Philipp Hunold                 0.0027397260273972603
+Lukas Hunold                   4
+Paul Hunold                    36
+Lukas Hunold                   925
+Sylem Hunold                   150.1013698630137
+Elle Hunold                    2
+Philipp Hunold                 36
+Greg Hunold                    36
+Elle Hunold                    2
+Enron Hunold                   2
+Paul Hunold                    36
+Elle Hunold                    2
+Elle Hunold                    3
+Megan Kernan Hunold            36
+Paul Hunold                    36
+Lukas Hunold                   4
+Salma Hayek                    36
+Elle Hunold                    2
+Peter Paul                     36
+Jack sparrow                   36
+hanna H                        -1
+Zaki Hunold                    2
+Paul Hunold                    32.01917808219178
+Samantha Hunold                36
+Mary Jane                      36
+**************************************************
+**************************************************
+	Siblings order by age for each family
+**************************************************
+NAME			Birth Year
+
+@F01@
+Philipp Hunold                 1979
+Zaki Hunold                    2013
+Enron Hunold                   2013
+@F02@
+Lukas Hunold                   1090
+Sylem Hunold                   1700
+**************************************************

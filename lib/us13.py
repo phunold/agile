@@ -11,8 +11,7 @@ Birth dates of siblings should be more than 8 months apart or less than 2 days a
 
 
 def check(families, individuals):
-  #or def check(families):
-  #or def check(individuals,families):
+  
   children = dict()
   dates = dict() # stores marriage/birth dates
   id = ''
