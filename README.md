@@ -19,3 +19,8 @@ Team members:
 - US27: Include individual ages in the report
 - US25: Unique first names in families
 - US28: Order siblings by age
+
+## Sprint 3
+- US30: List living married
+- US38: List upcoming birthdays
+
