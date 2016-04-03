@@ -25,3 +25,5 @@ us25.check(families, individuals)
 ##Display Reports
 us27.display(individuals)
 us28.display(families, individuals)
+us30.display(individuals)
+us38.display(families, individuals)
