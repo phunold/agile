@@ -25,5 +25,5 @@ families, individuals = utils.load_from_file(ged)
 ##Display Reports
 #us27.display(individuals)
 #us28.display(families, individuals)
-us30.display(individuals)
-#us38.display(families, individuals)
+#us30.display(individuals)
+us38.display(individuals)

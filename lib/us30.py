@@ -34,6 +34,5 @@ def display(individuals):
     if "DEAT" in indi.keys():
       continue
     else:
-      print (key)
       print ("{} {} {}".format(key.ljust(WIDTH),indi[key]["NAME"].ljust(WIDTH),indi[key]["MARR"].year))
   print ('*'*50)
