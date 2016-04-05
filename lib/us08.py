@@ -56,9 +56,9 @@ def check(families, individuals):
         if famId in familyDates:
             marrDate = familyDates[famId]
             if birthDate <= marrDate:
-                print 'US08 Birth before marriage of parents'
-                print 'Birth of a child recorded in the Gedcom file cannot be on/before the marriage date of his/her parents'
-                print '>>Error for child',id,'with birth date',birthDate
+                print('US08 Birth before marriage of parents')
+                print('Birth of a child recorded in the Gedcom file cannot be on/before the marriage date of his/her parents')
+                print('>>Error for child',id,'with birth date',birthDate)
             
         
 

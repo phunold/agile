@@ -74,9 +74,9 @@ def check(families, individuals):
                 if birthDate < dadDday:
                     #child's bday can't be more than 9 months after dad's expiry
                     if diff_month(dadDday, birthDate) > 9:
-                        print 'US09 Birth should be before death of parents'
-                        print 'Birth of a child recorded in the Gedcom file can only be max 9 months after death date of his/her father'
-                        print '>>Error for child',id,'with birth date',birthDate
+                        print('US09 Birth should be before death of parents')
+                        print('Birth of a child recorded in the Gedcom file can only be max 9 months after death date of his/her father')
+                        print('>>Error for child',id,'with birth date',birthDate)
             #else:
                 #Dad alive for individual
             
@@ -87,9 +87,9 @@ def check(families, individuals):
                 #compare child's bday if after mom's expiry
                 if birthDate < momDday:
                     #child's bday can't be more than 9 months after dad's expiry
-                    print 'US09 Birth should be before death of mother'
-                    print 'Birth of a child recorded in the Gedcom file can only be on/before the death date of his/her mother'
-                    print '>>Error for child',id,'with birth date',birthDate
+                    print('US09 Birth should be before death of mother')
+                    print('Birth of a child recorded in the Gedcom file can only be on/before the death date of his/her mother')
+                    print('>>Error for child',id,'with birth date',birthDate)
             
             #else:
                #Mom alive for individual
