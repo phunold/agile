@@ -57,7 +57,7 @@ def load_from_file(ged):
         families.append(family)
       else:
         if not tag == 'NOTE':
-          print("ERROR: unkown previous tag, need to know if INDI/FAMC: %s" % line)
+          print("ERROR: unkown previous tag, need to know if INDI/FAM: %s" % line)
       
   return (families,individuals)
 
