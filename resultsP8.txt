@@ -1,0 +1,39 @@
+('LOAD', './data/us30.ged')
+**************************************************
+	List living married
+**************************************************
+ID		NAME		Marriage Year
+
+@I06@           Elle Hunold     2014
+@I03@           Ellen Hunold    2013
+@I01@           Philipp Hunold  2000
+@I05@           Sam Hunold      2011
+@I04@           Elle Hunold     2011
+@I02@           Paul Hunold     2011
+**************************************************
+('LOAD', './data/us38.ged')
+**************************************************
+	List upcoming birthdays
+**************************************************
+ID		NAME		Birth date
+
+@I04@           Ellen Hunold    2016-04-11 00:00:00
+@I02@           Paul Hunold     2016-04-09 00:00:00
+**************************************************
+('LOAD', './data/us08.ged')
+US08 Birth before marriage of parents
+Birth of a child recorded in the Gedcom file cannot be on/before the marriage date of his/her parents
+('>>Error for child', '@I03@', 'with birth date', datetime.datetime(2009, 8, 31, 0, 0))
+('LOAD', './data/us09.ged')
+US09 Birth should be before death of parents
+Birth of a child recorded in the Gedcom file can only be max 9 months after death date of his/her father
+('>>Error for child', '@I03@', 'with birth date', datetime.date(2009, 8, 3))
+US09 Birth should be before death of mother
+Birth of a child recorded in the Gedcom file can only be on/before the death date of his/her mother
+('>>Error for child', '@I03@', 'with birth date', datetime.date(2009, 8, 3))
+('LOAD', './data/us14.ged')
+US14 Multiple births less than 5
+('>>', '@F01@', ['1 JAN 2015', '1 JAN 2015', '1 JAN 2015', '1 JAN 2015', '1 JAN 2015'])
+('LOAD', './data/us10.ged')
+US10 ERROR Marriage after 14
+('>>', '@I02@', {'FAMS': '@F01@', 'BIRT': datetime.datetime(2000, 7, 11, 0, 0)})
