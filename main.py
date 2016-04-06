@@ -12,6 +12,7 @@ ged = sys.argv[1]
 families, individuals = utils.load_from_file(ged)
 
 # Run Checks
+
 us02.check(individuals)
 us03.check(individuals)
 us13.check(families, individuals)
@@ -23,7 +24,8 @@ us25.check(families, individuals)
 us18.check(individuals)
 #us08.check(families, individuals)
 us09.check(families, individuals)
-us10.check(families, individuals)
+us19.check(individuals, families)
+
 
 #Display Reports
 us27.display(individuals)

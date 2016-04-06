@@ -1,0 +1,40 @@
+0 @F01@ FAM
+1 HUSB @I01@
+1 WIFE @I02@
+1 CHIL @I03@
+1 CHIL @I04@
+0 @F02@ FAM
+1 HUSB @I05@
+1 WIFE @I06@
+1 CHIL @I07@
+1 CHIL @I08@
+0 @F03@ FAM
+1 HUSB @I09@
+1 WIFE @I10@
+1 CHIL @I01@
+1 CHIL @I05@
+0 @F04@ FAM
+1 HUSB @I03@
+1 WIFE @I07@
+1 CHIL @I11@
+1 CHIL @I12@
+0 @I01@ INDI
+1 NAME Philipp Hunold
+0 @I02@ INDI
+1 NAME Paul Hunold
+0 @I03@ INDI
+1 NAME Al Hunold
+0 @I04@ INDI
+1 NAME Sam Hunold
+0 @I05@ INDI
+1 NAME Kareem Hunold
+0 @I06@ INDI
+1 NAME Lud Hunold
+0 @I07@ INDI
+1 NAME Mac Hunold
+0 @I08@ INDI
+1 NAME Jack Hunold
+0 @I09@ INDI
+1 NAME Steve Hunold
+0 @I10@ INDI
+1 NAME Sal Hunold
